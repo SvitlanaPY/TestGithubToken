@@ -29,11 +29,26 @@ git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
 e.g. https://<TOKEN>@github.com/SvitlanaPY/TestGithubToken.git
 
 
-Managing remote repositories
+Managing remote repositories:
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
+
+Adding a remote repository with SSH URL: 
+To add remote with SSH URL, use the git remote add command on the terminal, in the directory your repository is stored at.
+
+The git remote add command takes two arguments:
+A remote name, for example, origin
+A remote SSH URL, for example, git@github.com:<username>/<repo>.git
+$ git remote add origin git@github.com:<username>/<repo>.git
+# To verify remote
+$ git remote -v
+> origin  git@github.com:<username>/<repo>.git (fetch)
+> origin  git@github.com:<username>/<repo>.git (push)
+
 
 
 Cloning GitHub repo with HTTPS URLs:
+https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories
+
 The https:// clone URLs are available on all repositories, regardless of visibility. 
 https:// clone URLs work even if you are behind a firewall or proxy.
 

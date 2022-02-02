@@ -5,12 +5,12 @@ GitHub authentication modes:
 
 
 
-Connecting to GitHub with SSH
+Connecting to GitHub with SSH:
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 You can connect to GitHub using the Secure Shell Protocol (SSH), which provides a secure channel over an unsecured network.
 
 
-Generating a new SSH key:
+Generating a new SSH keypair:
 Open Terminal.
 Paste the text below, substituting in your GitHub email address.
 $ ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -48,19 +48,22 @@ Click Add SSH key.
 
 
 
-
 Managing remote repositories
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
 
 
 Cloning GitHub repo with SSH URLs:
+https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories
+
 SSH URLs provide access to a Git repository via SSH, a secure protocol. 
 To use these URLs, you must generate an SSH keypair on your computer and add the public key to your account on GitHub.com. 
 For more information, see "Connecting to GitHub with SSH.":
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 
 When you git clone, git fetch, git pull, or git push to a remote repository using SSH URLs, 
 you'll be prompted for a password and must provide your SSH key passphrase. 
-For more information, see "Working with SSH key passphrases."
+For more information, see "Working with SSH key passphrases.":
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases
 
 
